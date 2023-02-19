@@ -1,11 +1,9 @@
-import kivy
-from kivy.app import App
-from kivy.uix.label import Label
+from tkinter import *
 
-class myapp(App):
-    def build(self):
-        return Label(text="Hello World")
+root = Tk()
 
-if __name__ == '__main__':
-    myapp().run
+myLabel = Label(root, text="Hello World!")
 
+myLabel.pack()
+
+root.mainloop()
